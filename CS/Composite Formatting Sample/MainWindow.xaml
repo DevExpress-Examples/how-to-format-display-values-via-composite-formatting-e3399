@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="200" Width="348" xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors">
+    <Grid>
+        <dxlc:GroupBox Header="Details" Name="groupBox2" Padding="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="Order:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"></Label>
+                <dxe:TextEdit Text="00075" DisplayFormatString="ID {0}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" />
+                <Label Content="In Stock:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"></Label>
+                <dxe:SpinEdit Name="spinEdit3" Grid.Row="1" DisplayFormatString="{}{0} units"
+                            Margin="1" Grid.Column="1"
+                        NullText="Null"
+                        AllowNullInput="True" VerticalAlignment="Center">
+                    <dxe:SpinEdit.EditValue>
+                        349.99
+                    </dxe:SpinEdit.EditValue>
+                </dxe:SpinEdit>
+                <Label Content="Discount:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"></Label>
+                <dxe:SpinEdit Name="spinEdit4" Grid.Row="2" Grid.Column="1" DisplayFormatString="p0"
+                            Margin="1" VerticalAlignment="Center">
+                    <dxe:SpinEdit.EditValue>
+                        0.15
+                    </dxe:SpinEdit.EditValue>
+                </dxe:SpinEdit>
+                <Label Content="Ship Date:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"></Label>
+                <dxe:DateEdit Name="dateEdit2" Grid.Row="3" Grid.Column="1"
+                            Margin="1" AllowSpinOnMouseWheel="True" DisplayFormatString="By {0}" VerticalAlignment="Center">
+                    <dxe:DateEdit.EditValue>
+                        10/10/2010
+                    </dxe:DateEdit.EditValue>
+                </dxe:DateEdit>
+            </Grid>
+        </dxlc:GroupBox>
+    </Grid>
+</Window>

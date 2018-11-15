@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/Composite Formatting Sample/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/Composite Formatting Sample/MainWindow.xaml))
+<!-- default file list end -->
 # How to: Format Display Values via Composite Formatting
 
 
